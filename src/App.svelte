@@ -1,20 +1,15 @@
 <script lang="ts">
   import data from '../terms.json';
+  import TermCard from './lib/TermCard.svelte';
 
   const { terms } = data;
 </script>
 
 <main>
-  <ul>
-    {#each terms as { term, kana, romaji, translation, ...extras }}
-      <li>{term}</li>
-      <ul>
-        <li>{kana}</li>
-        <li>{romaji}</li>
-        <li>{translation}</li>
-      </ul>
-    {/each}
-  </ul>
+  <h1>Fun Japanese Terms</h1>
+  {#each terms as { term, kana, romaji, translation, ...extras }}
+    <TermCard {term} {kana} {romaji} {translation} {extras}/>
+  {/each}
 </main>
 
 <style lang="stylus">

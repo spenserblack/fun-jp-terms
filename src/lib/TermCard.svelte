@@ -1,0 +1,31 @@
+<script lang="ts">
+  export let term: string;
+  export let kana: string;
+  export let romaji: string;
+  export let translation: string;
+  export let extras: Record<string, string>;
+
+  $: attributes = [{ kana }, { romaji }, { translation }, extras ].flatMap(Object.entries);
+</script>
+
+<div class="term-card">
+  <h2>{term}</h2>
+  <table>
+    <tbody>
+      {#each attributes as [name, val]}
+        <tr><th scope="row">{name}</th><td>{val}</td></tr>
+      {/each}
+    </tbody>
+  </table>
+</div>
+
+<style lang="stylus">
+  .term-card
+    border-radius 5px
+    background-color ghostwhite
+    width 50%
+    margin 0 auto
+
+  th
+    text-transform capitalize
+</style>

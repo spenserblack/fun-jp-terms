@@ -1,9 +1,20 @@
 <script lang="ts">
-  import HelloWorld from './lib/HelloWorld.svelte';
+  import data from '../terms.json';
+
+  const { terms } = data;
 </script>
 
 <main>
-  <HelloWorld />
+  <ul>
+    {#each terms as { term, kana, romaji, translation, ...extras }}
+      <li>{term}</li>
+      <ul>
+        <li>{kana}</li>
+        <li>{romaji}</li>
+        <li>{translation}</li>
+      </ul>
+    {/each}
+  </ul>
 </main>
 
 <style lang="stylus">

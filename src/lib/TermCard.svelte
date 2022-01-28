@@ -26,6 +26,14 @@
     width 50%
     margin 0 auto
 
+  table
+    margin 5% auto
+
   th
+    text-align right
     text-transform capitalize
+
+  td
+    text-align left
+    width 66%
 </style>

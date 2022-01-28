@@ -1,8 +1,9 @@
 <script lang="ts">
   import data from '../terms.json';
   import TermCard from './lib/TermCard.svelte';
+  import type { Term as TermType } from './types';
 
-  const { terms } = data;
+  const terms = data.terms as Array<TermType>;
 </script>
 
 <main>

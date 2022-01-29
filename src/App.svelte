@@ -18,6 +18,7 @@
 
   :root
     background-color kamenozoki
+    color sumi
     font-family sans-serif
 
   main

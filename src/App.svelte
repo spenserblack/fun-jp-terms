@@ -14,7 +14,10 @@
 </main>
 
 <style lang="stylus">
+  @require "./style/variables"
+
   :root
+    background-color kamenozoki
     font-family sans-serif
 
   main

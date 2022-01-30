@@ -1,6 +1,9 @@
 <script lang="ts">
+  import { createEventDispatcher } from 'svelte';
   import { setTheme, unsetTheme, currentTheme, saveTheme } from '../theme';
   import type { Theme } from '../theme';
+
+  const dispatch = createEventDispatcher();
 
   let mode: NonNullable<Theme> = currentTheme() ?? 'light';
   const darkMode = 'ダークモード';
@@ -17,6 +20,7 @@
     }
     mode = currentTheme() ?? 'light';
     saveTheme(mode);
+    dispatch('click');
   }
 </script>
 

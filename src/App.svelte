@@ -5,6 +5,10 @@
   import type { Term as TermType } from './types';
 
   const terms = data.terms as Array<TermType>;
+
+  function enableTransition() {
+    document.querySelector(':root')?.setAttribute('data-transition', 'enabled');
+  }
 </script>
 
 <main>
@@ -15,7 +19,7 @@
       <h1>Fun Japanese Terms</h1>
     </div>
     <div class="header-right">
-      <ThemeButton />
+      <ThemeButton on:click={enableTransition} />
     </div>
   </header>
   {#each terms as { term, kana, romaji, translation, ...extras }}
@@ -43,6 +47,9 @@
     background-color var(--primary)
     color var(--text)
     font-family sans-serif
+
+  :root[data-transition="enabled"]
+    transition all .5s
 
   main
     text-align center

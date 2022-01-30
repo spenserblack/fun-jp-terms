@@ -7,9 +7,19 @@
 </script>
 
 <main>
-  <h1>Fun Japanese Terms</h1>
+  <header class="row">
+    <div class="header-left">
+    </div>
+    <div class="header-center">
+      <h1>Fun Japanese Terms</h1>
+    </div>
+    <div class="header-right">
+    </div>
+  </header>
   {#each terms as { term, kana, romaji, translation, ...extras }}
-    <TermCard {term} {kana} {romaji} {translation} {extras}/>
+    <div class="row">
+      <TermCard {term} {kana} {romaji} {translation} {extras}/>
+    </div>
   {/each}
 </main>
 
@@ -36,4 +46,19 @@
     text-align center
     padding 1em
     margin 0 auto
+
+  .row
+    $margin = 1%
+    display flex
+    margin-top $margin
+    margin-bottom $margin
+
+  header.row
+    justify-content space-between
+
+    .header-left, .header-right
+      flex 0 0 25%
+
+    .header-center
+      flex 0 0 50%
 </style>

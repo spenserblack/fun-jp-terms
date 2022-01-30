@@ -28,4 +28,6 @@ export const unsetTheme = (): void => {
   root?.removeAttribute(attr);
 };
 
+export const currentTheme = (): Theme => root?.getAttribute(attr) as Theme;
+
 export default theme;

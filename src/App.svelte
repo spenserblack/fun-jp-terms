@@ -1,5 +1,6 @@
 <script lang="ts">
   import data from '../terms.json';
+  import ThemeButton from './lib/ThemeButton.svelte';
   import TermCard from './lib/TermCard.svelte';
   import type { Term as TermType } from './types';
 
@@ -14,6 +15,7 @@
       <h1>Fun Japanese Terms</h1>
     </div>
     <div class="header-right">
+      <ThemeButton />
     </div>
   </header>
   {#each terms as { term, kana, romaji, translation, ...extras }}

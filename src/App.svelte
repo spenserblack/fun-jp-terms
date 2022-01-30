@@ -24,6 +24,9 @@
   :root
     theme-mixin(light-theme)
 
+  :root[data-theme="dark"]
+    theme-mixin(dark-theme)
+
   :root
     background-color var(--primary)
     color var(--text)

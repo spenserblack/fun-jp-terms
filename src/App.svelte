@@ -14,11 +14,11 @@
 </main>
 
 <style lang="stylus">
-  @require "./style/variables"
+  @require "./style/themes"
 
   :root
-    background-color kamenozoki
-    color sumi
+    background-color light-theme.primary
+    color light-theme.text
     font-family sans-serif
 
   main

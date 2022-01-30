@@ -20,11 +20,11 @@
 </div>
 
 <style lang="stylus">
-  @require "../style/variables"
+  @require "../style/themes"
 
   .term-card
     border-radius 5px
-    background-color byakuroku
+    background-color light-theme.secondary
     width 50%
     margin 0 auto
 

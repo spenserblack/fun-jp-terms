@@ -20,11 +20,9 @@
 </div>
 
 <style lang="stylus">
-  @require "../style/themes"
-
   .term-card
     border-radius 5px
-    background-color light-theme.secondary
+    background-color var(--secondary)
     width 50%
     margin 0 auto
 

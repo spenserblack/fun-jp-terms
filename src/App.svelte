@@ -16,9 +16,17 @@
 <style lang="stylus">
   @require "./style/themes"
 
+  theme-mixin(theme)
+    for prop, val in theme
+      custom-prop = '--%s' % unquote(prop)
+      {custom-prop}: val
+
   :root
-    background-color light-theme.primary
-    color light-theme.text
+    theme-mixin(light-theme)
+
+  :root
+    background-color var(--primary)
+    color var(--text)
     font-family sans-serif
 
   main

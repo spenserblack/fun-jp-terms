@@ -28,6 +28,10 @@
 
   table
     margin 5% auto
+  
+  th, td
+    vertical-align text-top
+    padding 0.5em
 
   th
     text-align right

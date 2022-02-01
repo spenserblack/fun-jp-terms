@@ -3,5 +3,5 @@ export type Term = {
   kana: string,
   romaji: string,
   translation: string | string[],
-  [key: string]: string,
+  [key: string]: string | string[],
 };

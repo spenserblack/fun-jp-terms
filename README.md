@@ -1,5 +1,7 @@
 # [![logo] Fun JP Terms][website]
 
+[![CI](https://github.com/spenserblack/fun-jp-terms/actions/workflows/ci.yml/badge.svg)](https://github.com/spenserblack/fun-jp-terms/actions/workflows/ci.yml)
+
 This is a [growing collection][terms] (currently quite small :cry:) of Japanese
 words or expressions that I encounter and find particularly amusing or
 interesting.

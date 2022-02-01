@@ -14,7 +14,19 @@ indent_size = 2
 indent_style = space
 indent_size = 2
 
+[site.webmanifest]
+indent_style = space
+indent_size = 2
+
 [*.styl]
+indent_style = space
+indent_size = 2
+
+[*.svg]
+indent_style = space
+indent_size = 2
+
+[*.xml]
 indent_style = space
 indent_size = 2
 

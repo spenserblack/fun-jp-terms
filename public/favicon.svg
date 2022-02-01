@@ -1,0 +1,25 @@
+<svg width="128" height="128"  xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text {
+      font-family: 'Courier New', monospace;
+      font-size: 48px;
+    }
+    .bg {
+      fill: #A8D8B9;
+    }
+    .fg {
+      fill: #1C1C1C;
+    }
+    @media (prefers-color-scheme: dark) {
+      .bg {
+        fill: #8E354A;
+      }
+      .fg {
+        fill: #FEDFE1;
+      }
+    }
+  </style>
+  <circle class="bg" cx="64" cy="64" r="32"/>
+  <text class="fg" x="32" y="64">面</text>
+  <text class="fg" x="64" y="96">白</text>
+</svg>

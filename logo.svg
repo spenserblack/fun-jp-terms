@@ -1,1 +1,25 @@
-public/favicon.svg
+<svg viewBox="0 0 128 128" width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text {
+      font-family: 'Courier New', monospace;
+      font-size: 80px;
+    }
+    .bg {
+      fill: #A8D8B9;
+    }
+    .fg {
+      fill: #1C1C1C;
+    }
+    @media (prefers-color-scheme: dark) {
+      .bg {
+        fill: #8E354A;
+      }
+      .fg {
+        fill: #FEDFE1;
+      }
+    }
+  </style>
+  <circle class="bg" cx="64" cy="64" r="64"/>
+  <text class="fg" x="0" y="80">面</text>
+  <text class="fg" x="48" y="128">白</text>
+</svg>

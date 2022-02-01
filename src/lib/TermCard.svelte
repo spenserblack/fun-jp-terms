@@ -2,7 +2,7 @@
   export let term: string;
   export let kana: string;
   export let romaji: string;
-  export let translation: string;
+  export let translation: string | string[];
   export let extras: Record<string, string>;
 
   $: attributes = [{ kana }, { romaji }, { translation }, extras ].flatMap(Object.entries);
@@ -13,7 +13,13 @@
   <table>
     <tbody>
       {#each attributes as [name, val]}
-        <tr><th scope="row">{name}</th><td>{val}</td></tr>
+        {#if Array.isArray(val) }
+          {#each val as item, itemIndex }
+            <tr><th scope="row">{name} {itemIndex + 1}</th><td>{item}</td></tr>
+          {/each}
+        {:else}
+          <tr><th scope="row">{name}</th><td>{val}</td></tr>
+        {/if}
       {/each}
     </tbody>
   </table>
@@ -28,7 +34,7 @@
 
   table
     margin 5% auto
-  
+
   th, td
     vertical-align text-top
     padding 0.5em

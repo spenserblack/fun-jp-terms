@@ -8,7 +8,11 @@ interesting.
 
 [colors](./src/style/variables/colors.styl) sourced from the wonderful [iroiro].
 
+[favicons](./public/) (besides `public/favicon.svg`) generated with
+[RealFaviconGenerator].
+
 [logo]: ./logo.svg
 [iroiro]: https://github.com/antfu/iroiro
+[RealFaviconGenerator]: https://realfavicongenerator.net/
 [terms]: ./terms.json
 [website]: https://fun-jp-terms.vercel.app/

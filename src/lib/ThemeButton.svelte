@@ -3,6 +3,9 @@
   import { setTheme, unsetTheme, currentTheme, saveTheme } from '../theme';
   import type { Theme } from '../theme';
 
+  export let square: boolean = false;
+  export let fill: boolean = false;
+
   const dispatch = createEventDispatcher();
 
   let mode: NonNullable<Theme> = currentTheme() ?? 'light';
@@ -24,7 +27,12 @@
   }
 </script>
 
-<button title={nextMode} on:click={onClick}>{jpNextMode}</button>
+<button
+  title={nextMode}
+  class:square={square}
+  class:fill={fill}
+  on:click={onClick}
+>{jpNextMode}</button>
 
 <style lang="stylus">
   button
@@ -34,4 +42,12 @@
     border none
     border-radius 10px
     padding 10px
+
+    &.square
+      border-radius 0
+
+    &.fill
+      width 100%
+      height 100%
+
 </style>

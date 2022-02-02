@@ -19,7 +19,7 @@
       <h1>Fun Japanese Terms</h1>
     </div>
     <div class="header-right">
-      <ThemeButton on:click={enableTransition} />
+      <ThemeButton square fill on:click={enableTransition} />
     </div>
   </header>
   {#each terms as { term, kana, romaji, translation, ...extras }}
@@ -60,6 +60,9 @@
     display flex
     margin-top $margin
     margin-bottom $margin
+
+  header
+    background-color var(--secondary)
 
   header.row
     margin-top 0

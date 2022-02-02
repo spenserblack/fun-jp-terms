@@ -3,7 +3,7 @@
   export let kana: string;
   export let romaji: string;
   export let translation: string | string[];
-  export let extras: Record<string, string>;
+  export let extras: Record<string, string | string[]>;
 
   $: attributes = [{ kana }, { romaji }, { translation }, extras ].flatMap(Object.entries);
 </script>

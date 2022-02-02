@@ -42,6 +42,7 @@
     border none
     border-radius 10px
     padding 10px
+    transition background-color 0.5s, color 0.5s
 
     &.square
       border-radius 0
@@ -49,5 +50,9 @@
     &.fill
       width 100%
       height 100%
+
+    &:hover
+      background-color var(--secondary-dark)
+      color var(--text-dark)
 
 </style>

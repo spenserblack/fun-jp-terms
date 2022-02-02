@@ -36,6 +36,7 @@
     for prop, val in theme
       custom-prop = '--%s' % unquote(prop)
       {custom-prop}: val
+      {custom-prop}-dark: darken(val, 20%)
 
   :root
     theme-mixin(light-theme)

@@ -62,6 +62,7 @@
     margin-bottom $margin
 
   header.row
+    margin-top 0
     justify-content space-between
 
     .header-left, .header-right

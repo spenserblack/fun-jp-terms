@@ -29,11 +29,12 @@
   .term-card
     border-radius 5px
     background-color var(--secondary)
-    width 50%
     margin 0 auto
+    min-width 50%
+    max-width 590px
 
   table
-    margin 5% auto
+    margin 0 auto
 
   th, td
     vertical-align text-top

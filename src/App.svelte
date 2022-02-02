@@ -24,7 +24,9 @@
   </header>
   {#each terms as { term, kana, romaji, translation, ...extras }}
     <div class="row">
-      <TermCard {term} {kana} {romaji} {translation} {extras}/>
+      <div class="col">
+        <TermCard {term} {kana} {romaji} {translation} {extras}/>
+      </div>
     </div>
   {/each}
 </main>
@@ -74,4 +76,10 @@
 
     .header-center
       flex 0 0 50%
+
+  .col
+    justify-content center
+    flex-basis 0
+    flex-grow 1
+    max-width 100%
 </style>

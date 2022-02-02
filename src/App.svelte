@@ -4,7 +4,7 @@
   import TermCard from './lib/TermCard.svelte';
   import type { Term as TermType } from './types';
 
-  const terms = data.terms as Array<TermType>;
+  const terms: TermType[] = data.terms;
 
   function enableTransition() {
     document.querySelector(':root')?.setAttribute('data-transition', 'enabled');

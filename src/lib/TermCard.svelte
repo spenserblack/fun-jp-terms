@@ -1,4 +1,6 @@
 <script lang="ts">
+  import speak from '../speak';
+
   export let term: string;
   export let kana: string;
   export let romaji: string;
@@ -9,7 +11,7 @@
 </script>
 
 <div class="term-card">
-  <h2>{term}</h2>
+  <h2><a href="#" on:click={() => speak(term)}>{term}</a></h2>
   <table>
     <tbody>
       {#each attributes as [name, val]}

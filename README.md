@@ -11,6 +11,16 @@ interesting.
 [favicons](./public/) (besides `public/favicon.svg`) generated with
 [RealFaviconGenerator].
 
+## Data Files
+
+### [`terms.json`](./terms.json)
+
+This is the main data file of amusing terms and their translations.
+
+### [`miscellaneous.json`](./miscellaneous.json)
+
+These are fun facts that don't belong in `terms.json`.
+
 [logo]: ./logo.svg
 [iroiro]: https://github.com/antfu/iroiro
 [RealFaviconGenerator]: https://realfavicongenerator.net/

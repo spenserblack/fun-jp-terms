@@ -1,7 +1,7 @@
 <script lang="ts">
   import octicons from '@primer/octicons';
 
-  export let name: keyof octicons | null = null;
+  export let name: string | null = null;
   $: icon = name == null ? null : octicons[name].toSVG();
 </script>
 

@@ -11,7 +11,15 @@
     <div class="header-left">
     </div>
     <div class="header-center">
-      <h1>Fun Japanese Terms</h1>
+      <div class="row">
+        <div class="col">
+          <h1>Fun Japanese Terms</h1>
+        </div>
+      </div>
+      <div class="row">
+        <a class="col" href="/">Home</a>
+        <a class="col" href="/random/">Random</a>
+      </div>
     </div>
     <div class="header-right">
       <ThemeButton square fill on:click={enableTransition} />
@@ -71,4 +79,11 @@
     flex-basis 0
     flex-grow 1
     max-width 100%
+
+  a
+    color var(--link)
+
+    &:visited
+    &:active
+      color var(--link-active)
 </style>

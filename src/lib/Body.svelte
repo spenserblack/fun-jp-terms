@@ -1,34 +1,27 @@
 <script lang="ts">
-  import data from '../terms.json';
-  import TermCard from './lib/TermCard.svelte';
-  import Body from './lib/Body.svelte';
-  import type { Term as TermType } from './types';
-
-  const terms: TermType[] = data.terms;
-
-  const {
-    term,
-    kana,
-    romaji,
-    translation,
-    ...extras
-  }: TermType = terms[Math.floor(Math.random() * terms.length)];
+  import ThemeButton from './ThemeButton.svelte';
 
   function enableTransition() {
     document.querySelector(':root')?.setAttribute('data-transition', 'enabled');
   }
 </script>
 
-<Body>
-  <div class="row">
-    <div class="col">
-      <TermCard {term} {kana} {romaji} {translation} {extras}/>
+<main>
+  <header class="row">
+    <div class="header-left">
     </div>
-  </div>
-</Body>
+    <div class="header-center">
+      <h1>Fun Japanese Terms</h1>
+    </div>
+    <div class="header-right">
+      <ThemeButton square fill on:click={enableTransition} />
+    </div>
+  </header>
+  <slot></slot>
+</main>
 
 <style lang="stylus">
-  @require "./style/themes"
+  @require "../style/themes"
 
   theme-mixin(theme)
     for prop, val in theme

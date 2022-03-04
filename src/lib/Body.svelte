@@ -1,10 +1,5 @@
 <script lang="ts">
-  import data from '../terms.json';
-  import ThemeButton from './lib/ThemeButton.svelte';
-  import TermCard from './lib/TermCard.svelte';
-  import type { Term as TermType } from './types';
-
-  const terms: TermType[] = data.terms;
+  import ThemeButton from './ThemeButton.svelte';
 
   function enableTransition() {
     document.querySelector(':root')?.setAttribute('data-transition', 'enabled');
@@ -16,23 +11,25 @@
     <div class="header-left">
     </div>
     <div class="header-center">
-      <h1>Fun Japanese Terms</h1>
+      <div class="row">
+        <div class="col">
+          <h1>Fun Japanese Terms</h1>
+        </div>
+      </div>
+      <div class="row">
+        <a class="col" href="/">Home</a>
+        <a class="col" href="/random/">Random</a>
+      </div>
     </div>
     <div class="header-right">
       <ThemeButton square fill on:click={enableTransition} />
     </div>
   </header>
-  {#each terms as { term, kana, romaji, translation, ...extras }}
-    <div class="row">
-      <div class="col">
-        <TermCard {term} {kana} {romaji} {translation} {extras}/>
-      </div>
-    </div>
-  {/each}
+  <slot></slot>
 </main>
 
 <style lang="stylus">
-  @require "./style/themes"
+  @require "../style/themes"
 
   theme-mixin(theme)
     for prop, val in theme
@@ -82,4 +79,11 @@
     flex-basis 0
     flex-grow 1
     max-width 100%
+
+  a
+    color var(--link)
+
+    &:visited
+    &:active
+      color var(--link-active)
 </style>

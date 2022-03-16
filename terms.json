@@ -35,6 +35,15 @@
       "romaji": "aidzuchi wo utsu",
       "translation": "Add interjections to show that one is paying attention",
       "example": "A: \"Blah blah blah blah\" B: 「なるほど」"
+    },
+    {
+      "term": "てやんでえ",
+      "kana": "てやんでえ",
+      "romaji": "teyandee",
+      "translation": "What're you saying?!",
+      "dialect": "Seems like Kantou dialect",
+      "source phrase": "何を言ってやがるんだ",
+      "note": "Rude expression"
     }
   ]
 }

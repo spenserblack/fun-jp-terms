@@ -44,6 +44,13 @@
       "dialect": "Seems like Kantou dialect",
       "source phrase": "何を言ってやがるんだ",
       "note": "Rude expression"
+    },
+    {
+      "term": "弱肉強食",
+      "kana": "じゃくにくきょうしょく",
+      "romaji": "jakuniku kyoushoku",
+      "translation": "Survival of the fittest",
+      "literal translation": "Weak meat, strong eat"
     }
   ]
 }

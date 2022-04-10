@@ -1,4 +1,7 @@
 <script lang="ts">
+  import Octicon from './Octicon.svelte';
+  import speak from '../speak';
+
   export let term: string;
   export let kana: string;
   export let romaji: string;
@@ -9,7 +12,10 @@
 </script>
 
 <div class="term-card">
-  <h2>{term}</h2>
+  <h2>
+    <!-- TODO Aria label -->
+    {term}<Octicon on:click={() => speak(term)} name="unmute"/>
+  </h2>
   <table>
     <tbody>
       {#each attributes as [name, val]}

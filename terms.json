@@ -51,6 +51,14 @@
       "romaji": "jakuniku kyoushoku",
       "translation": "Survival of the fittest",
       "literal translation": "Weak meat, strong eat"
+    },
+    {
+      "term": "十八番",
+      "kana": "おはこ",
+      "romaji": "ohako",
+      "translation": "One's specialty",
+      "literal translation": "Number 18",
+      "description": "Based on 歌舞伎十八番 (Kabuki Juuhachiban), 18 Kabuki performances selected by Ichikawa Danjuurou VII"
     }
   ]
 }

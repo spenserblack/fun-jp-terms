@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Octicon from './Octicon.svelte';
   import ThemeButton from './ThemeButton.svelte';
 
   function enableTransition() {
@@ -19,6 +20,9 @@
       <div class="row">
         <a class="col" href="/">Home</a>
         <a class="col" href="/random/">Random</a>
+        <a class="col" href="//github.com/spenserblack/fun-jp-terms">
+          <Octicon name="mark-github" /> Repository
+        </a>
       </div>
     </div>
     <div class="header-right">

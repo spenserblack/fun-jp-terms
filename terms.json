@@ -59,6 +59,17 @@
       "translation": "One's specialty",
       "literal translation": "Number 18",
       "description": "Based on 歌舞伎十八番 (Kabuki Juuhachiban), 18 Kabuki performances selected by Ichikawa Danjuurou VII"
+    },
+    {
+      "term": "背に腹は代えられない",
+      "kana": "せにはらはかえられない",
+      "romaji": "se ni hara wa kaerarenai",
+      "translation": [
+        "Can't make an omelette without breaking a few eggs",
+        "Can't solve a problem without making a sacrifice"
+       ],
+      "literal translation": "The back cannot replace the abdomen",
+      "explanation": "The abdomen is more vital, so one must sacrifice the back to avoid greater injury"
     }
   ]
 }

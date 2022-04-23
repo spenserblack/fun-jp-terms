@@ -12,10 +12,10 @@
 </script>
 
 <Body>
-  {#each terms as { term, kana, romaji, translation, ...extras }}
+  {#each terms as { term, kana, romaji, translation, source, ...extras }}
     <div class="row">
       <div class="col">
-        <TermCard {term} {kana} {romaji} {translation} {extras}/>
+        <TermCard {term} {kana} {romaji} {translation} {source} {extras}/>
       </div>
     </div>
   {/each}

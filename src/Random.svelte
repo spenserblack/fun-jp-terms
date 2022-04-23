@@ -11,6 +11,7 @@
     kana,
     romaji,
     translation,
+    source,
     ...extras
   }: TermType = terms[Math.floor(Math.random() * terms.length)];
 
@@ -22,7 +23,7 @@
 <Body>
   <div class="row">
     <div class="col">
-      <TermCard {term} {kana} {romaji} {translation} {extras}/>
+      <TermCard {term} {kana} {romaji} {translation} {source} {extras}/>
     </div>
   </div>
 </Body>

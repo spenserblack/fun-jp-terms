@@ -95,6 +95,13 @@
       "literal translation": "Yellow voice",
       "comment": "What makes a \"yellow voice\" shrill?",
       "source": ["jisho.org", "dictionary.goo.ne.jp"]
+    },
+    {
+      "term": "日常茶飯事",
+      "kana": "にちじょうさはんじ",
+      "romaji": "nichijou sahanji",
+      "translation": "everyday occurence",
+      "source": "jisho.org"
     }
   ]
 }
